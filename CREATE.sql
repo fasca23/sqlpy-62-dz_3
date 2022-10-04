@@ -37,7 +37,6 @@ CREATE TABLE compilation (
 	compilation_id SERIAL PRIMARY KEY,
 	name VARCHAR(100) NOT NULL,
 	year DATE NOT NULL,
-	track_id INTEGER REFERENCES track(track_id),---
 	last_update TIMESTAMP NOT NULL DEFAULT NOW(),
 	deleted BOOLEAN DEFAULT FALSE NOT NULL
 );
